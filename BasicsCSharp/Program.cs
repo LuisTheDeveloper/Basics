@@ -6,9 +6,12 @@ namespace BasicsCSharp
     {
         static void Main(string[] args)
         {
-            ObjString();
-            ObjMath();
-            CircleCalc();
+
+            // ObjString();
+            // ObjMath();
+            // CircleCalc();
+            // BranchesLoops();
+            SumNumsDivisibleBy3();
         }
 
         static void ObjString()
@@ -97,6 +100,75 @@ namespace BasicsCSharp
             Console.WriteLine($"The area for a circle with a radius of {radius} is {area}");
 
 
+        }
+
+        static void BranchesLoops()
+        {
+            int a = 5;
+            int b = 3;
+            int c = 4;
+            // The == symbol tests for equality. Using == distinguishes the test for equality from assignment
+            // The && represents "and".
+            if ((a + b + c > 10) && (a == b))
+            {
+                Console.WriteLine("The answer is greater than 10.");
+                Console.WriteLine("And the first number is equal to the second");
+            }
+            else
+            {
+                Console.WriteLine("The answer is less than or equal to 10.");
+                Console.WriteLine("Or the first number is not equal to the second");
+            }
+
+            if ((a + b + c > 10) || (a == b))
+            {
+                Console.WriteLine("The answer is greater than 10");
+                Console.WriteLine("Or the first number is equal to the second");
+            }
+            else
+            {
+                Console.WriteLine("The answer is not greater than 10");
+                Console.WriteLine("And the first number is not equal to the second");
+            }
+
+            int counter = 0;
+            // The while loop tests the condition before executing the code
+            while (counter < 10)
+            {
+                Console.WriteLine($"Hello World! The counter is {counter}");
+                counter++;  // The ++ is the incrementer operator, it adds 1.
+            }
+
+            // The do ... while loop executes the code first, and then checks the condition.
+            counter = 1;
+            do
+            {
+                Console.WriteLine($"Hello World! The counter is {counter}");
+                counter++;
+            } while (counter < 1);
+
+            // The for loop has 3 parts: initializer, condition and iterator.
+            for (counter = 0; counter < 3; counter++)
+            {
+                Console.WriteLine($"Hello World! The counter is {counter}");
+            }
+
+        }
+
+        static void SumNumsDivisibleBy3()
+        {
+            int remainder = 0;
+            int number = 0;
+            int totsum = 0;
+
+            for (number = 0; number<21; number++)
+            {
+                remainder = number % 3;
+                if (remainder == 0)
+                    totsum += number;
+            }
+
+            Console.WriteLine($"The sum of the all integers less than 21 that are divisible by 3 is: {totsum}");
         }
 
     }
