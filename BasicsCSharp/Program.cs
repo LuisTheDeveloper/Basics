@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BasicsCSharp
 {
@@ -11,7 +12,8 @@ namespace BasicsCSharp
             // ObjMath();
             // CircleCalc();
             // BranchesLoops();
-            SumNumsDivisibleBy3();
+            // SumNumsDivisibleBy3();
+            ListCollections();
         }
 
         static void ObjString()
@@ -169,6 +171,25 @@ namespace BasicsCSharp
             }
 
             Console.WriteLine($"The sum of the all integers less than 21 that are divisible by 3 is: {totsum}");
+        }
+
+        static void ListCollections()
+        {
+            // Creating a list - it uses the List<T> type.
+            var names = new List<string> { "Luis", "Ana", "Felipe" };
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+
+            Console.WriteLine();
+            names.Add("Mary");
+            names.Add("Annie");
+            names.Remove("Felipe");
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
         }
 
     }
