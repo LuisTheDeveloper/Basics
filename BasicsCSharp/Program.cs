@@ -16,11 +16,14 @@ namespace BasicsCSharp
         static void Main(string[] args) 
         {
             Tutorial pTutor = new Tutorial();   // Create an object from the Tutorial class.
-            pTutor.SetTutorial(1, ".Net");
+            pTutor.SetTutorial(1, ".Net");      // Calling the first method
+            Console.WriteLine(pTutor.GetTutorial());
+
+            pTutor.SetTutorial(".Net Core");    // Calling the second method
             Console.WriteLine(pTutor.GetTutorial());
 
             Guru99Tutorial pTutor2 = new Guru99Tutorial();
-            pTutor2.RenameTutorial(".Net by Guru99");
+            pTutor2.RenameTutorial(".Net by Guru99");       // The child class renames the TutorialName field
             Console.WriteLine(pTutor2.GetTutorial());
 
             Int32[] elements;

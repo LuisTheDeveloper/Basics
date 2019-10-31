@@ -38,12 +38,20 @@ namespace BasicsCSharp
             TutorialName = pName;
         }
 
+        // Polymorphism in action: we setup the same method but they have different forms of implementation.
+        // One name can have many forms
+        public void SetTutorial(string pName)
+        {
+            TutorialName = pName;
+        }
+
         public string GetTutorial()
         {
             return TutorialName;
         }
     }
 
+        //Inheritance in action: a child class inherits the fields and methods of the parent class. The child can have its own methods.
         public class Guru99Tutorial : Tutorial // This class is going to be a child class of Tutorial class
         {
             public void RenameTutorial(String pNewName)
