@@ -7,17 +7,57 @@ namespace BasicsCSharp
 {
     class Program
     {
+        // enum data type declaration
+        enum Days { Sun, Mon, Tur, Wed, Thu, Fri, Sat };    
+
         static void Main(string[] args) 
         {
+            Int32[] elements;
+
+            elements = new Int32[3];
+            elements[0] = 1;
+            elements[1] = 2;
+            elements[2] = 3;
 
             // ObjString();
-             ObjMath();
+            // ObjMath();
             // CircleCalc();
             // BranchesLoops();
             // SumNumsDivisibleBy3();
-            ListCollections();
+            // ListCollections();
+            NewBranches();
+
+            // Console.Write(Days.Sun);
+
+            // Reading elements from the array
+            foreach( Int32 n in elements)
+            {
+                Console.WriteLine(n);
+            }
 
             Console.ReadKey();
+        }
+
+        static void NewBranches()
+        {
+            Int32 value = 11;
+            string value2 = "South Wales";
+
+            switch (value)
+            {
+                case 1: 
+                    Console.WriteLine("Value is 1");
+                    break;
+                case 11:
+                    if (value2.Contains("Wales"))
+                    {
+                        Console.WriteLine($"the string contains {value2}");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Other Value");
+                    break;
+            }
         }
 
         static void ObjString()
