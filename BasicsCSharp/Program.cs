@@ -13,7 +13,7 @@ namespace BasicsCSharp
         static void Main(string[] args) 
         {
             Tutorial pTutor = new Tutorial();   // Create an object from the Tutorial class.
-            pTutor.SetTutorial(1, ".Net");
+            //pTutor.SetTutorial(1, ".Net");
 
             Console.WriteLine(pTutor.GetTutorial());
 
