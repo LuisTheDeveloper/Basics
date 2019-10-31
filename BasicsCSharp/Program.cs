@@ -1,19 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 
+// Every application belongs to a class, all code needs to be defined in a class. Every class belongs to a namespace.
+// A namespace is just a logical grouping of classes.
 namespace BasicsCSharp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
 
             // ObjString();
-            // ObjMath();
+             ObjMath();
             // CircleCalc();
             // BranchesLoops();
             // SumNumsDivisibleBy3();
             ListCollections();
+
+            Console.ReadKey();
         }
 
         static void ObjString()
@@ -50,6 +54,9 @@ namespace BasicsCSharp
         static void ObjMath()
         {
             // Integer types variables
+            Int32 num = 30;
+            Console.WriteLine(num);
+
             int a = 7;
             int b = 4;
             int c = 3;
