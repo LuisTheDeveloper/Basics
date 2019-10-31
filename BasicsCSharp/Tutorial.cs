@@ -11,6 +11,20 @@ namespace BasicsCSharp
     // Methods - identifies which operations can be performed on the data.
     class Tutorial
     {
+        // Defining the fields of the class
+        int TutorialID;
+        string TutorialName;
 
+        // Defining the SetTutorial method
+        public void SetTutorial(int pID, string pName)
+        {
+            TutorialID = pID;
+            TutorialName = pName;
+        }
+
+        public string GetTutorial()
+        {
+            return TutorialName;
+        }
     }
 }

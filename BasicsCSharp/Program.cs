@@ -12,6 +12,12 @@ namespace BasicsCSharp
 
         static void Main(string[] args) 
         {
+            Tutorial pTutor = new Tutorial();   // Create an object from the Tutorial class.
+            pTutor.SetTutorial(1, ".Net");
+
+            Console.WriteLine(pTutor.GetTutorial());
+
+
             Int32[] elements;
 
             elements = new Int32[3];
@@ -25,7 +31,7 @@ namespace BasicsCSharp
             // BranchesLoops();
             // SumNumsDivisibleBy3();
             // ListCollections();
-            NewBranches();
+            // NewBranches();
 
             // Console.Write(Days.Sun);
 
