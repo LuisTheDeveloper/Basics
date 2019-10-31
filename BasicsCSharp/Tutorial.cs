@@ -18,11 +18,11 @@ namespace BasicsCSharp
     // Protected: those members can only be accessed by classes inherited from the current class.
     //
 
-    class Tutorial
+    public class Tutorial
     {
         // Defining the fields of the class
-        int TutorialID;
-        string TutorialName;
+        protected int TutorialID;
+        protected string TutorialName;
 
         //This is a constructor: used to initialize values. Should have the same name of the class.
         public Tutorial()   // Access modifier always public and no return type.
@@ -43,4 +43,13 @@ namespace BasicsCSharp
             return TutorialName;
         }
     }
+
+        public class Guru99Tutorial : Tutorial // This class is going to be a child class of Tutorial class
+        {
+            public void RenameTutorial(String pNewName)
+            {
+                TutorialName = pNewName;
+            }
+
+        }
 }

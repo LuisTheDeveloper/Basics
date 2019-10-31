@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
 // Every application belongs to a class, all code needs to be defined in a class. Every class belongs to a namespace.
 // A namespace is just a logical grouping of classes.
@@ -13,10 +16,12 @@ namespace BasicsCSharp
         static void Main(string[] args) 
         {
             Tutorial pTutor = new Tutorial();   // Create an object from the Tutorial class.
-            //pTutor.SetTutorial(1, ".Net");
-
+            pTutor.SetTutorial(1, ".Net");
             Console.WriteLine(pTutor.GetTutorial());
 
+            Guru99Tutorial pTutor2 = new Guru99Tutorial();
+            pTutor2.RenameTutorial(".Net by Guru99");
+            Console.WriteLine(pTutor2.GetTutorial());
 
             Int32[] elements;
 
