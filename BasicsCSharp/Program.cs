@@ -26,13 +26,16 @@ namespace BasicsCSharp
             pTutor2.RenameTutorial(".Net by Guru99");       // The child class renames the TutorialName field
             Console.WriteLine(pTutor2.GetTutorial());
 
+            
+
             Int32[] elements;
 
+            
             elements = new Int32[3];
             elements[0] = 1;
             elements[1] = 2;
             elements[2] = 3;
-
+            
             // ObjString();
             // ObjMath();
             // CircleCalc();
